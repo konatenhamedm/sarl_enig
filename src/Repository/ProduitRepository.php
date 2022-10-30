@@ -26,7 +26,7 @@ class ProduitRepository extends ServiceEntityRepository
         $em = $this->getEntityManager();
         $connection = $em->getConnection();
         $sql = <<<SQL
-SELECT COUNT(id),t.libelle
+SELECT COUNT(t.id),t.libelle as libelle
 FROM produit as t
 WHERE  1 = 1
 SQL;

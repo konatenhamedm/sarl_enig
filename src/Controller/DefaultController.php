@@ -86,7 +86,7 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/home", name="home", methods={"GET", "POST"})
+     * @Route("/", name="home", methods={"GET", "POST"})
      * @return Response
      */
     public function home()
